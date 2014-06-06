@@ -10,6 +10,11 @@ def create
   redirect_to root_path 
 end
 
+def update
+  @tweet = Tweet.create(tweet_params)
+  redirect_to root_path 
+end
+
 def show
   @tweet = Tweet.find(params[:id])
 end
