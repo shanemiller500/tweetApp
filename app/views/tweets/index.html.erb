@@ -1,5 +1,7 @@
 <h1>hello world</h1>
 
+<%= will_paginate @things %>
+
 
 <%  @tweets.each do |show| %>
 <p><%= show.message %>
@@ -9,3 +11,4 @@
 <% end %>
 
 <a href="tweets/new"><button > add a tweet</button></a>
+
