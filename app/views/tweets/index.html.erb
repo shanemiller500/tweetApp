@@ -1,0 +1,11 @@
+<h1>hello world</h1>
+
+
+<%  @tweets.each do |show| %>
+<p><%= show.message %>
+  <%= link_to 'Destroy', tweet_path(show.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Edit', edit_tweet_path(show.id) %></p>
+
+<% end %>
+
+<a href="tweets/new"><button > add a tweet</button></a>
